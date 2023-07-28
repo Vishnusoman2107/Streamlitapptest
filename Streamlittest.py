@@ -14,7 +14,9 @@ def get_sp500_symbols():
 
 # Function to get Nifty stock symbols
 def get_nifty_symbols():
-    exceldata = pd.read_excel(r"C:\Users\vishn\Desktop\Valuation Models\Book2.xlsx")
+    # Replace 'raw_url_of_your_excel_file' with the actual raw URL of your Excel file on GitHub
+    excel_url = 'https://github.com/Vishnusoman2107/Streamlitapptest/blob/4b12da88a809bbf2f8d8e3ee65e936153898cd8b/Book2.xlsx'
+    exceldata = pd.read_excel(excel_url)
     # Assuming 'Symbol' is the column name you want to access
     symbol_column = exceldata['Symbol']
     # Add '.NS' to all symbols in the 'Symbol' column
